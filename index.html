@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="main w-full ">
+    <nav class="fixed top-0 left-0 px-10 py-5 flex justify-between items-center w-full ">
+      <a href="#"><img class="h-20" src="/public/pngwing.com (1).png" alt=""></a>
+      <div class="flex gap-5">
+        <button onclick="scrollToSection('players')" class="text-xl transition-all duration-300 hover:text-[#59d5c8] hover:text-shadow-[0_0_15px_#59d5c8]">Players</button>
+      </div>
+    </nav>
+    <div class="w-full h-screen overflow-hidden">
+      <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-screen filter saturate-150 contrast-150 " 
+      src="/public/pngwing.com (1).png" alt="">
+      <div class="h-[23rem] w-[23rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6ad4d9] z-[-1] blur-[100px]"></div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <!-- players wali container -->
+    <div class="h-[100vh] w-full bg-[black] relative flex justify-evenly items-center gap-[20px]" id="players">
+
+      <!-- Aniket  -->
+      <div class="flex flex-col h-[80vh] w-[25vw] bg-[black] rounded-3xl border-[0.5px] border-[#6ad4d9] relative hover:shadow-[0_0_30px_#6ad4d9] transition-shadow duration-300">
+        <a href="https://github.com/AniketShisodia"><img class="w-[100%] h-[60%] object-cover text-left rounded-t-3xl absolute  " src="https://i.pinimg.com/736x/18/79/90/187990202cbe3b30bb93acdb9c88e6e8.jpg" alt=""></a>
+        <div class="text-left top-[62%] text-center text-2xl relative"><h1>Aniket Shisodia</h1>
+          <p class="w-[95%] text-sm text-center text-[grey]">A Leetcode Expert with a passion for problem solving and a love for competitive programming.
+            Legend says he is still solving problems on <br>
+            <a class="text-[#d6bb22]" href="https://leetcode.com/u/aniketshisodia7_/">Leetcode</a>.
+          </p>
+          <p class="text-sm text-center text-[grey]"><a class="text-[#49af4f]">Tech Stack:</a> (C++,Javascript,React,SQL)</p>
+        </div>
+      </div>
+      <!-- Amal -->
+      <div class="flex flex-col h-[80vh] w-[25vw] bg-[black] rounded-3xl border-[0.5px] border-[#6ad4d9] relative hover:shadow-[0_0_30px_#6ad4d9] transition-shadow duration-300">
+        <a href="https://github.com/Amal-Sharma"><img class="w-[100%] h-[60%] object-cover text-left rounded-t-3xl absolute  "
+           src="https://i.pinimg.com/474x/b9/9f/74/b99f747d0739a25498d2d7ef8b88389b.jpg" alt=""></a>
+        <div class="text-left top-[62%] text-center text-2xl relative"><h1>Amal Sharma</h1>
+          <p class="w-[95%] text-sm text-center text-[grey]">(THE CREATOR OF THIS WEBSITE)<br>A FRONTEND DEVELOPER WITH A PASSION FOR CREATING EXCEPTIONAL AND FUNCTIONAL WEB EXPERIENCES.
+            Legend says he is still working on a Project.<br>
+             <a class="text-[#d6bb22]" href="https://leetcode.com/u/amalkumar2904/">Leetcode</a>
+          </p>
+          <p class="text-sm text-center text-[grey]"><a class="text-[#49af4f]">Tech Stack:</a>C++,Javascript,React,Three.js,<br>Node.js,SQL,GSAP</p>
+
+        </div>
+      </div>
+      <!-- Maybe Abhishek -->
+      <div class="flex flex-col h-[80vh] w-[25vw] bg-[black] rounded-3xl border-[0.5px] border-[#6ad4d9] relative hover:shadow-[0_0_30px_#6ad4d9] transition-shadow duration-300">
+        <a href="https://github.com/21-abhishekyadav/"><img class="w-[100%] h-[60%] object-cover text-left rounded-t-3xl absolute  " 
+          src="https://i.pinimg.com/474x/3e/1b/ef/3e1bef6d7b051165b0c88fe1ddd492a5.jpg" alt=""></a>
+        <div class="text-left top-[62%] text-center text-2xl relative"><h1>Abhishek Yadav</h1>
+          <p class="w-[95%] text-sm text-center text-[grey]">An enthusiast problem solver more complex an problem more fun rafting in seas of challenges
+            <br>(**according to him only)<br> <a class="text-[#d6bb22]"
+             href="https://leetcode.com/u/abhishek_ay/">Leetcode</a>
+          </p>
+          <p class="text-sm text-center text-[grey]"><a class="text-[#49af4f]">Tech Stack:</a> (C++,Javascript,React,SQL)</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
