@@ -12,7 +12,7 @@
     <nav class="fixed top-0 left-0 px-10 py-5 flex justify-between items-center w-full ">
       <a href="#"><img class="h-20" src="/public/pngwing.com.png" alt=""></a>
       <div class="flex gap-5">
-        <button onclick="scrollToSection('players')" class="text-xl transition-all duration-300 hover:text-[#59d5c8] hover:text-shadow-[0_0_15px_#59d5c8]">Players</button>
+        <button onclick="document.getElementById('players').scrollIntoView({behavior: 'smooth'})" class="text-xl transition-all duration-300 hover:text-[#59d5c8] hover:text-shadow-[0_0_15px_#59d5c8]">Players</button>
       </div>
     </nav>
     <div class="w-full h-screen overflow-hidden">
