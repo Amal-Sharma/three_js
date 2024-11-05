@@ -43,7 +43,7 @@ const loader = new GLTFLoader()
 let model
 
 // model k lie 
-loader.load('/public/DamagedHelmet.gltf',function (gltf) {
+loader.load('./DamagedHelmet.gltf',function (gltf) {
     model = gltf.scene
     scene.add(model)
     model.position.set(0, 0, 0)
